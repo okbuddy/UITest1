@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZHKTopCollectionView" customModule="UITest1" customModuleProvider="target">
+            <connections>
+                <outlet property="imagesCollection" destination="ePx-eB-vpe" id="tI5-Yl-aNo"/>
+                <outlet property="pageControl" destination="zd2-8p-wQP" id="nBi-pc-vnI"/>
+                <outlet property="view1" destination="ZoB-eQ-vql" id="NAN-QT-qwU"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZoB-eQ-vql">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="296"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ePx-eB-vpe">
+                    <rect key="frame" x="0.0" y="0.0" width="348" height="296"/>
+                    <animations/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Djj-gx-KaN">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="zd2-8p-wQP">
+                    <rect key="frame" x="0.0" y="259" width="348" height="37"/>
+                    <animations/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="pageIndicatorTintColor" red="0.39508928571428525" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zd2-8p-wQP" secondAttribute="trailing" id="ZTM-ko-w1A"/>
+                <constraint firstAttribute="bottom" secondItem="ePx-eB-vpe" secondAttribute="bottom" id="bjq-1A-tGR"/>
+                <constraint firstAttribute="bottom" secondItem="zd2-8p-wQP" secondAttribute="bottom" id="gUD-KE-knE"/>
+                <constraint firstItem="zd2-8p-wQP" firstAttribute="leading" secondItem="ZoB-eQ-vql" secondAttribute="leading" id="l1h-10-dZl"/>
+                <constraint firstAttribute="trailing" secondItem="ePx-eB-vpe" secondAttribute="trailing" id="oya-Cf-88P"/>
+                <constraint firstItem="ePx-eB-vpe" firstAttribute="leading" secondItem="ZoB-eQ-vql" secondAttribute="leading" id="p7W-gO-iyD"/>
+                <constraint firstItem="ePx-eB-vpe" firstAttribute="top" secondItem="ZoB-eQ-vql" secondAttribute="top" id="w0q-2r-ZCz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="55" y="220"/>
+        </view>
+    </objects>
+</document>

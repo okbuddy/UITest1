@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="aO9-jL-QDj" customClass="SCROLLCollectionViewCell" customModule="UITest1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="240" height="182"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IAH-nj-hMH">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="182"/>
+                        <animations/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hl7-sd-KZb">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="182"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLd-Eh-KQv">
+                        <rect key="frame" x="20" y="116" width="220" height="29"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="IAH-nj-hMH" firstAttribute="leading" secondItem="aO9-jL-QDj" secondAttribute="leading" id="6Eu-V0-PVf"/>
+                <constraint firstItem="hl7-sd-KZb" firstAttribute="top" secondItem="aO9-jL-QDj" secondAttribute="top" id="7Vr-2G-Gvk"/>
+                <constraint firstAttribute="bottom" secondItem="HLd-Eh-KQv" secondAttribute="bottom" constant="37" id="D0j-fv-UcD"/>
+                <constraint firstItem="IAH-nj-hMH" firstAttribute="top" secondItem="aO9-jL-QDj" secondAttribute="top" id="DBQ-NQ-kGf"/>
+                <constraint firstItem="hl7-sd-KZb" firstAttribute="top" secondItem="IAH-nj-hMH" secondAttribute="top" id="HiG-Os-pog"/>
+                <constraint firstItem="hl7-sd-KZb" firstAttribute="top" secondItem="HLd-Eh-KQv" secondAttribute="bottom" constant="50" id="L7b-mD-yfB"/>
+                <constraint firstItem="hl7-sd-KZb" firstAttribute="top" secondItem="HLd-Eh-KQv" secondAttribute="bottom" id="N5F-gA-NkA"/>
+                <constraint firstAttribute="bottom" secondItem="hl7-sd-KZb" secondAttribute="bottom" id="XYU-2N-MdZ"/>
+                <constraint firstAttribute="trailing" secondItem="HLd-Eh-KQv" secondAttribute="trailing" id="YL8-6f-AfW"/>
+                <constraint firstItem="HLd-Eh-KQv" firstAttribute="leading" secondItem="aO9-jL-QDj" secondAttribute="leading" constant="20" id="afV-8F-4He"/>
+                <constraint firstAttribute="trailing" secondItem="IAH-nj-hMH" secondAttribute="trailing" id="fG4-B4-HTJ"/>
+                <constraint firstItem="HLd-Eh-KQv" firstAttribute="centerY" secondItem="aO9-jL-QDj" secondAttribute="centerY" id="hwy-gM-Q3N"/>
+                <constraint firstAttribute="trailing" secondItem="hl7-sd-KZb" secondAttribute="trailing" id="oFW-Pn-20g"/>
+                <constraint firstItem="hl7-sd-KZb" firstAttribute="leading" secondItem="aO9-jL-QDj" secondAttribute="leading" id="vxP-6t-DSe"/>
+                <constraint firstItem="HLd-Eh-KQv" firstAttribute="bottom" secondItem="IAH-nj-hMH" secondAttribute="bottom" constant="-50" id="wDQ-uB-Nmo"/>
+                <constraint firstAttribute="bottom" secondItem="IAH-nj-hMH" secondAttribute="bottom" id="wG0-Tm-tO7"/>
+            </constraints>
+            <size key="customSize" width="240" height="182"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="HiG-Os-pog"/>
+                    <exclude reference="L7b-mD-yfB"/>
+                    <exclude reference="N5F-gA-NkA"/>
+                    <exclude reference="hwy-gM-Q3N"/>
+                    <exclude reference="wDQ-uB-Nmo"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="imageView1" destination="IAH-nj-hMH" id="FQP-yN-sFc"/>
+                <outlet property="surface" destination="hl7-sd-KZb" id="aCL-NT-pLQ"/>
+                <outlet property="titleLabel" destination="HLd-Eh-KQv" id="iU7-nf-XJR"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="294"/>
+        </collectionViewCell>
+    </objects>
+</document>
